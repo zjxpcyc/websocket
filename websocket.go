@@ -10,5 +10,5 @@ func Run() {
 
 // Send 发送内容
 func Send(message Message) {
-	GHub.Send(message)
+	go GHub.Send(message)
 }

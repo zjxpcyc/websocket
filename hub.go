@@ -75,6 +75,6 @@ func (h *Hub) Send(msg Message) error {
 		return err
 	}
 
-	h.Broadcast <- data
+	h.Broadcast <- JSONMessage(data)
 	return nil
 }
